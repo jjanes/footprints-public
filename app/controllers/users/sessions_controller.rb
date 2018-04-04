@@ -8,7 +8,6 @@ class Users::SessionsController < Devise::SessionsController
   def create
     begin
       auth_hash = request.env["omniauth.auth"]
-      puts "REQUEST ENV: #{request.env}"
       user    = User.from_omniauth(auth_hash)
 
       prefetch_craftsmen(auth_hash)
