@@ -200,10 +200,10 @@ module DefaultSeed
       end
 
       new_craftsman = Footprints::Repository.craftsman.create({
-        :name           => "Russell Baker (London Director)",
+        :name           => "Ozzy",
         :location       => "London",
         :employment_id  => 103,
-        :email          => ApplicantDispatch::Strategies::DefaultAllLondonApplicants::LONDON_DIRECTOR_EMAIL,
+        :email          => "ozzy@example.com",
         :seeking        => true,
         :has_apprentice => [true, false].sample,
         :skill          => [1, 2].sample})
@@ -261,24 +261,25 @@ module DefaultSeed
       puts "------------------------------------------------------------"
       puts "-----------------------Adding Users-------------------------"
 
+      # new_user = Footprints::Repository.user.create({
+      #   :email => ENV['STEWARD']
+      # })
+
+      # puts "New User LINKED TO #{new_user.craftsman.name} FROM CALLBACK"
+
+      # new_user = Footprints::Repository.user.create({
+      #   :email => "b.craftsman@gmail.com"
+      # })
+
+      # puts "new user added to the #{Rails.env} environment"
+
       new_user = Footprints::Repository.user.create({
-        :email => ENV['STEWARD']
-      })
-
-      puts "New User LINKED TO #{new_user.craftsman.name} FROM CALLBACK"
-
-      new_user = Footprints::Repository.user.create({
-        :email => "b.craftsman@gmail.com"
-      })
-
-      puts "new user added to the #{Rails.env} environment"
-
-      new_user = Footprints::Repository.user.create({
-        :login => "you@abcinc.com",
+        :login => "ozzy@example.com",
         :uid   => "107478018817920458918",
         :provider => "google_oauth2",
-        :email => "you@abcinc.com",
-        :admin => true
+        :email => "ozzy@example.com",
+        :admin => true,
+        :password => 'Test123!'
       })
 
       puts "new user added to the #{Rails.env} environment"
