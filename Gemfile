@@ -18,7 +18,7 @@ gem "omniauth-google-oauth2", '~> 0.2.2'
 gem "edn", '~> 1.0.2'
 gem "httparty", '~> 0.13.0'
 gem "american_date"
-
+gem 'devise'
 gem 'warehouse', git: 'https://github.com/ryanzverner/stockroom-ruby-client.git'
 
 group :doc do
