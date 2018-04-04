@@ -1,9 +1,7 @@
 class ApplicationController < ActionController::Base
   attr_accessor :repo
 
-  def current_user
-    @current_user = repo.user.find_by_id(session[:user_id]) if session[:user_id]
-  end
+  before_action :authenticate_user!
 
   def admin?
     current_user.admin?
