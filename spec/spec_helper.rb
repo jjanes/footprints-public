@@ -17,6 +17,9 @@ RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
   #config.profile_examples = true # uncomment if profiling is necessary
 
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::ControllerHelpers, type: :view
+
   config.before(:all) { Footprints::Repository.craftsman.destroy_all; Footprints::Repository.applicant.destroy_all; Footprints::Repository.assigned_craftsman_record.destroy_all }
 end
 

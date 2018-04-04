@@ -17,7 +17,7 @@
       <div class="container">
         <h1><a href="/">Footprints</a></h1>
         <div class="toggle-nav"></div>
-        <%= link_to "Log out", sessions_destroy_path, {:class => "nav-link", :method => :delete} %>
+        <%= link_to "Log out", sessions_destroy_path, {:class => "nav-link", :method => :delete} if current_user %>
       </div>
       <nav class="hidden">
         <div class="container">

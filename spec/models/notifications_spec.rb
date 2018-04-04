@@ -1,7 +1,6 @@
 require 'spec_helper'
 require 'spec_helpers/applicant_factory'
 require 'spec_helpers/craftsman_factory'
-require 'ar_repository/models/notification'
 
 describe Notification do
   applicant_factory = SpecHelpers::ApplicantFactory.new
