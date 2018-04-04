@@ -1,7 +1,10 @@
 Footprints::Application.routes.draw do
 
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks', sessions: 'users/sessions' }
-  get 'auth/google_oauth2/callback', to: 'sessions#create', :as => :new_session
+  get 'users/sign_in' => 'sessions#oauth_signin'
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  devise_scope :user do
+    get 'auth/google_oauth2/callback', to: 'users/sessions#create', :as => :new_session
+  end
   delete 'sessions/destroy', :as => :sessions_destroy
   get 'sessions/oauth_signin' => 'sessions#oauth_signin', :as => :oauth_signin
   get "applicants" => 'applicants#index'

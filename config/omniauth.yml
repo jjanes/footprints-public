@@ -11,5 +11,5 @@ staging:
   client_secret: 'DhrLMnxoEEPSaCeCF5jJP6jp'
 
 production:
-  client_id: '603953965445-q1rjisr25u1q0hmbgn431gc0h6ufjor0.apps.googleusercontent.com'
-  client_secret: 'UgjIiRrfFz_AT5p0Dk_S6IdV'
+  client_id: '425715198288-n3pt1hmhs99gdh11sn5frc1thqpcmemi.apps.googleusercontent.com'
+  client_secret: 'iEpR1y-EmCLgx6anKfVcfLxk'
