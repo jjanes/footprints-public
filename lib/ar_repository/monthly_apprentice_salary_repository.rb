@@ -1,4 +1,3 @@
-require 'ar_repository/models/monthly_apprentice_salary'
 require 'ar_repository/base_repository'
 
 module ArRepository

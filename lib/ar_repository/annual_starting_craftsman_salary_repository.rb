@@ -1,4 +1,3 @@
-require 'ar_repository/models/annual_starting_craftsman_salary'
 require 'ar_repository/base_repository'
 
 module ArRepository

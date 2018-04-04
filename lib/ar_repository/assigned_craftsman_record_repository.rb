@@ -1,4 +1,3 @@
-require 'ar_repository/models/assigned_craftsman_record'
 require 'ar_repository/base_repository'
 
 module ArRepository

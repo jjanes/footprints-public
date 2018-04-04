@@ -1,7 +1,6 @@
-require './lib/ar_repository/models/user'
-
 Footprints::Application.routes.draw do
 
+  devise_for :users
   get 'auth/google_oauth2/callback', to: 'sessions#create', :as => :new_session
   delete 'sessions/destroy', :as => :sessions_destroy
   get 'sessions/oauth_signin' => 'sessions#oauth_signin', :as => :oauth_signin
@@ -57,7 +56,7 @@ Footprints::Application.routes.draw do
   delete "salaries/:id" => "salaries#destroy", as: "destroy_salary"
 
   get "reporting" => "reporting#index", as: "reporting"
-  
+
   get "apprentices" => "apprentices#index", as: "apprentices"
   get "apprentices/:id" => "apprentices#edit"
   put "apprentices/:id" => "apprentices#update"

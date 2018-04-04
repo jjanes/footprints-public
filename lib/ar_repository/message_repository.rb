@@ -1,4 +1,3 @@
-require 'ar_repository/models/message'
 require 'ar_repository/base_repository'
 
 module ArRepository
