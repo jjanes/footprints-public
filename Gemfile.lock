@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:8thlight/warehouse-ruby-client.git
-  revision: 8f1b2e3afe4a87b8a6cd780cb9959c7be00f420b
+  remote: https://github.com/ryanzverner/stockroom-ruby-client.git
+  revision: 67c3cd6387ef4bbd9d15fb6fa2c2b7b770ab7222
   specs:
     warehouse (1.0.0)
       activesupport (>= 4.0.0, < 5.0)
@@ -229,4 +229,4 @@ DEPENDENCIES
   will_paginate (~> 3.0.5)
 
 BUNDLED WITH
-   1.15.1
+   1.16.1
