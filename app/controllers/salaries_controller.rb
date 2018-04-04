@@ -3,7 +3,6 @@ require './lib/salaries/salary_updater'
 require './lib/repository'
 
 class SalariesController < ApplicationController
-  before_filter :authenticate, :employee?
   before_filter :require_admin
 
   def edit

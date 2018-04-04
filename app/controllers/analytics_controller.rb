@@ -1,6 +1,4 @@
 class AnalyticsController < ApplicationController
-  before_filter :authenticate, :employee?
-
   include AnalyticsHelper
 
   def index

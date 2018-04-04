@@ -15,8 +15,6 @@ require 'will_paginate/array'
 
 class ApplicantsController < ApplicationController
   include ApplicantsHelper
-
-  before_filter :authenticate, :employee?, :except => [:submit]
   before_filter :require_admin, :only => [:destroy, :new, :create, :hire, :make_decision, :unassigned, :assign_craftsman]
 
   def index

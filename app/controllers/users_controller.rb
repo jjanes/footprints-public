@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_filter :authenticate, :employee?
 
   def show
     is_current_user do

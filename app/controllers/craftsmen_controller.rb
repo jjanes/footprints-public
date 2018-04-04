@@ -4,7 +4,6 @@ require './lib/craftsmen/craftsmen_presenter'
 require './lib/craftsmen/skills'
 
 class CraftsmenController < ApplicationController
-  before_filter :authenticate, :employee?
   before_filter :normalize_status, :only => [:index]
 
   def profile

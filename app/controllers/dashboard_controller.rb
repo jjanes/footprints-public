@@ -2,8 +2,6 @@ require './lib/applicants/applicant_index_presenter'
 require './lib/dashboard/dashboard_interactor'
 
 class DashboardController < ApplicationController
-  before_filter :authenticate, :employee?
-
   def index
     @craftsman = current_user.craftsman
     @confirmed_applicants = interactor.confirmed_applicants(@craftsman)
