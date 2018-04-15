@@ -12,10 +12,10 @@ class User < ActiveRecord::Base
   before_create :associate_craftsman
 
   def associate_craftsman
-    craftsman = Craftsman.create(name: self.email, employment_id: 1)
-    craftsman.save
+    # craftsman = Craftsman.create(name: self.email, employment_id: 1)
+    # craftsman.save
     self.craftsman_id = craftsman.employment_id if craftsman
-    self.save
+    # self.save
   end
 
   def self.from_omniauth(access_token)
