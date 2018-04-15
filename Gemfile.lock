@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/ryanzverner/stockroom-ruby-client.git
-  revision: 67c3cd6387ef4bbd9d15fb6fa2c2b7b770ab7222
+  revision: 6a2a590db269905276c335195912dc6659c1dff3
   specs:
-    warehouse (1.0.0)
+    stockroom (1.0.0)
       activesupport (>= 4.0.0, < 5.0)
       httparty (~> 0.13.1)
       multi_json (~> 1.7.5)
@@ -233,13 +233,13 @@ DEPENDENCIES
   sdoc
   simplecov
   sqlite3 (~> 1.3.9)
+  stockroom!
   teaspoon
   teaspoon-jasmine
   therubyracer
   turbolinks (~> 2.2.1)
   uglifier (>= 1.3.0)
   unicorn (~> 4.8.2)
-  warehouse!
   will_paginate (~> 3.0.5)
 
 BUNDLED WITH
